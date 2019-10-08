@@ -1,4 +1,4 @@
-fin = open('input1.txt', 'r', encoding='utf8')
+fin = open('6file/input1.txt', 'r', encoding='utf8')
 mySet = set()
 count = 0
 for value in fin:
