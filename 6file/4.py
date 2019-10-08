@@ -1,0 +1,5 @@
+fin = open('6file/input4.txt', 'r', encoding='utf8')
+fout = open('6file/out4.txt','w',encoding='utf8')
+print(''.join(fin.readlines()[::-1]), file=fout)
+fout.close()
+fin.close()
