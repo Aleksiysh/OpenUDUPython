@@ -15,5 +15,5 @@ for line in s:
 
 print(count, 'letters')
 print(len(newStr.split()),'words')
-print(len(s.split('\n'))-1, 'lines')
+print(len(s), 'lines')
 pass
