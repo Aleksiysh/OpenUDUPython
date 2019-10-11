@@ -1,4 +1,4 @@
-fin = open('6file/input5.txt', 'r', encoding='utf8')
+fin = open('input5.txt', 'r', encoding='utf8')
 s = fin.readlines()
 fin.close()
 
