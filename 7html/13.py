@@ -1,7 +1,3 @@
-from urllib.request import urlopen
-from bs4 import BeautifulSoup
-
-
 def getHomeLink(link):
     response = urlopen(link)
     html = response.read().decode('utf8')
@@ -16,6 +12,9 @@ def getHomeLink(link):
                 res.add(s)
     return res
 
+
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
 
 set1 = getHomeLink(
     ' https://stepik.org/media/attachments/lesson/258943/Moscow.html')
