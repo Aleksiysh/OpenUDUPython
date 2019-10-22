@@ -1,8 +1,9 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
-response = urlopen('https://en.wikipedia.org/wiki/Main_Page')
+response = urlopen('https://stepik.org/media/attachments/lesson/209717/1.html ')
 html = response.read().decode('utf8')
+print(html)
 fout = open('out4.html','w',encoding='utf8')
 print(html,file = fout)
 fout.close()
