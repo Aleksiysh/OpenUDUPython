@@ -1,6 +1,7 @@
 6file/out2.txt
 6file/out7.txt
 out*
+*.osm
 rogaikpyta/*
 6file/.~lock.salaries14.xlsx#
 6file/.vscode/settings.json
