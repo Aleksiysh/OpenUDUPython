@@ -5,10 +5,15 @@ from bs4 import BeautifulSoup
 resp = urlopen('https://stepik.org/media/attachments/lesson/245681/map2.osm')
 xml = resp.read().decode('utf8')  # считываем содержимое
 soup = BeautifulSoup(xml, 'xml')  # делаем суп с помощью lxml
-cnt = 0
-for way in soup.find_all('node'):  # идем по всем тэгам way
-    cnt += 1  # и просто считаем их количество
-
+cnt1 = 0
+cnt2 = 0
+for node in soup.find_all('node'):  
+    cnt1 += 1
+    flag = False
+    for tag in node('tag'):
+        flag =True
+    if flag:
+        cnt2+=1
 fout = open('out4.txt', 'w', encoding='utf8')
-print(cnt, file=fout)
+print(cnt1-cnt2, cnt2)
 fout.close()
